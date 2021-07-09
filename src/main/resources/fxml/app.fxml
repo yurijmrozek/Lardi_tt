@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="world.ucode.controller.MainController">
+   <Button layoutX="110.0" layoutY="340.0" mnemonicParsing="false" onMouseClicked="#on_do_button_clicked"
+           text="Set text" textAlignment="CENTER"/>
+   <TextArea fx:id="output_text_area" editable="false" layoutX="365.0" layoutY="15.0" prefHeight="305.0"
+             prefWidth="410.0" promptText="output"/>
+   <Pane fx:id="input_text_fields_pane" layoutX="15.0" layoutY="15.0" prefHeight="305.0" prefWidth="260.0">
+      <TextArea prefHeight="95.0" prefWidth="260.0" promptText="input 1"/>
+      <TextArea layoutY="105.0" prefHeight="95.0" prefWidth="260.0" promptText="input 2"/>
+      <TextArea layoutY="210.0" prefHeight="95.0" prefWidth="260.0" promptText="input 3"/>
+   </Pane>
+   <Text fx:id="error_text" fill="RED" layoutX="465.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0"
+         text="ERROR: fields can't be empty" visible="false" wrappingWidth="205.0"/>
+</AnchorPane>
