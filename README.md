@@ -1,3 +1,5 @@
+You need jdk 16 to build solution!
+
 To build the application use the command
 
 ```bash
